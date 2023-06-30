@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src=" http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js "></script>
+  
+</head>
+<style>
+  body {
+    padding: 20px;
+    background-color: rgb(251, 255, 0);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h2>Student Enrollment Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="rollNo" class="font-weight-bold">Roll No:</label>
+        <input type="text" class="form-control" id="rollNo" onchange="getstd()" placeholder="Enter Roll No" >
+      </div>
+      <div class="form-group">
+        <label for="fullName" class="font-weight-bold">Full Name:</label>
+        <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+      </div>
+      <div class="form-group">
+        <label for="class" class="font-weight-bold">Class:</label>
+        <input type="text" class="form-control" id="class" placeholder="Enter Class">
+      </div>
+      <div class="form-group">
+        <label for="birthDate" class="font-weight-bold">Birth Date:</label>
+        <input type="date" class="form-control" id="birthDate">
+      </div>
+      <div class="form-group">
+        <label for="address" class="font-weight-bold">Address:</label>
+        <textarea class="form-control" id="address" rows="1"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="enrollmentDate" class="font-weight-bold">Enrollment Date:</label>
+        <input type="date" class="form-control" id="enrollmentDate">
+      </div>
+      <button type="submit" class="btn btn-primary mr-5" id="submitBtn" onclick="savedata()" disabled>Save</button>
+      <button type="button" class="btn btn-primary mr-5" id="updateBtn" onclick="updatedata()" disabled>Update</button>
+      <button type="button" class="btn btn-primary mr-5" id="resetBtn" onclick="resetform()" disabled>Reset</button>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/index.js"></script>
+</body>
+
+</html>
