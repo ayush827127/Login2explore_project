@@ -19,3 +19,6 @@ Easy and fast to develop database applications without using any server side pro
 - Multiple Security Layers
 - Inbuilt support for querying multiple databases
 
+## Authors
+
+- [@AYUSHGUPTA](https://github.com/ayush827127)
